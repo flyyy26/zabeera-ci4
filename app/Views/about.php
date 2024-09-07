@@ -4,7 +4,7 @@ include(APPPATH . 'Views/templates/header.php');
 
 <div class="container-home">
     <div class="banner_page">
-        <img src="images/heading_banner_about.svg" alt="About Zabeera">
+        <img src="<?= base_url('images/heading_banner_about.svg'); ?>" alt="About Zabeera">
     </div>
     <div class="section_2_about">
         <h1>Who Are We</h1>
@@ -35,7 +35,7 @@ include(APPPATH . 'Views/templates/header.php');
             <p><span>WITH YOU THROUGH ALL KINDS OF WEATHER </span>Sweat and water-proof brightening lotion made from carefully selected ingredients. Three scented variations to complement every occasion.</p>
         </div>
         <div class="section_about_4_image">
-            <img src="images/image_about.png" class="img_cover" alt="">
+            <img src="<?= base_url('images/image_about.png'); ?>" class="img_cover" alt="">
         </div>
     </div>
     <div class="section_3_about_product">
@@ -43,7 +43,7 @@ include(APPPATH . 'Views/templates/header.php');
         <div class="about_product">
             <div class="about_product_box">
                 <div class="about_product_box_image">
-                    <img src="images/about_product_1.png" class="img_cover" alt="">
+                    <img src="<?= base_url('images/about_product_1.png'); ?>" class="img_cover" alt="">
                 </div>
                 <div class="about_product_box_content bg_grey">
                     <h4><?php echo $products[0]['name']; ?></h4>
@@ -52,7 +52,7 @@ include(APPPATH . 'Views/templates/header.php');
             </div>
             <div class="about_product_box">
                 <div class="about_product_box_image">
-                    <img src="images/about_product_2.png" class="img_cover" alt="">
+                    <img src="<?= base_url('images/about_product_2.png'); ?>" class="img_cover" alt="">
                 </div>
                 <div class="about_product_box_content bg_blue">
                     <h4><?php echo $products[1]['name']; ?></h4>
@@ -61,7 +61,7 @@ include(APPPATH . 'Views/templates/header.php');
             </div>
             <div class="about_product_box">
                 <div class="about_product_box_image">
-                    <img src="images/about_product_3.png" class="img_cover" alt="">
+                    <img src="<?= base_url('images/about_product_3.png'); ?>" class="img_cover" alt="">
                 </div>
                 <div class="about_product_box_content bg_orange">
                     <h4><?php echo $products[2]['name']; ?></h4>
@@ -72,7 +72,7 @@ include(APPPATH . 'Views/templates/header.php');
     </div>
     <div class="section_bottle">
         <div class="section_bottle_img">
-            <img src="images/bottle_image.png" style="width:100%;" alt="">
+            <img src="<?= base_url('images/bottle_image.png'); ?>" style="width:100%;" alt="">
         </div>
         <div class="section_bottle_content">
             <h1>ALL THE GOODNESS IN A BOTTLE</h1>
@@ -91,7 +91,7 @@ include(APPPATH . 'Views/templates/header.php');
     </div>
 </div>
 <div class="container-home">
-    <img src="images/footer_bg.png" class="footer_bg" alt="Zabeera Image Lotion">
+    <img src="<?= base_url('images/footer_bg.png'); ?>" class="footer_bg" alt="Zabeera Image Lotion">
 </div>
 
 <?php

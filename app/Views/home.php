@@ -8,7 +8,7 @@ include(APPPATH . 'Views/templates/header.php');
             <?php if (!empty($banners)): ?>
                 <?php foreach ($banners as $banner): ?>
                     <div class="swiper-slide banner" style="background-image: url('https://prahwa.net/storage/<?= $banner['image']; ?>')">
-                        <img src="images/heading_banner.svg" alt="Zabeera Website | About Zabeera | Zabeera Beauty | Zabeera Lotion">
+                        <img src="<?= base_url('images/heading_banner.svg'); ?>" alt="Zabeera Website | About Zabeera | Zabeera Beauty | Zabeera Lotion">
                         <span>#LongLastingRadiance</span>
                         <a href="<?= $banner['link']; ?>"><button>Explore Now <iconify-icon icon="solar:arrow-down-outline"></iconify-icon></button></a>
                     </div>
@@ -47,7 +47,7 @@ include(APPPATH . 'Views/templates/header.php');
             <a href="/product"><button>Buy Now <iconify-icon icon="solar:arrow-right-outline"></iconify-icon></button></a>
         </div>
         <div class="introduction-image">
-            <img src="images/introducing_image.png" class="img_cover" alt="Introducing Zabeera">
+            <img src="<?= base_url('images/introducing_image.png'); ?>"  class="img_cover" alt="Introducing Zabeera">
         </div>
     </div>
     <div class="product">
@@ -80,7 +80,7 @@ include(APPPATH . 'Views/templates/header.php');
     </div>
     <div class="why"> 
         <div class="why_image">
-            <img src="images/why_us_image.png" class="img_cover" alt="Why Choose Zabeera?">
+            <img src="<?= base_url('images/why_us_image.png'); ?>" class="img_cover" alt="Why Choose Zabeera?">
         </div>
         <div class="why_content">
             <h4>Why Us?</h4>
@@ -103,10 +103,10 @@ include(APPPATH . 'Views/templates/header.php');
     <h1>Reviews</h1>
     <div class="review-layout">
         <div class="review-container">
-            <img src="images/bg_review_1.png" alt="Zabeera Review" class="bg-review-1">
-            <img src="images/bg_review_2.png" alt="Zabeera Review" class="bg-review-2">
-            <img src="images/bg_review_3.png" alt="Zabeera Review" class="bg-review-3">
-            <img src="images/bg_review_4.png" alt="Zabeera Review" class="bg-review-4">
+            <img src="<?= base_url('images/images/bg_review_1.png'); ?>" alt="Zabeera Review" class="bg-review-1">
+            <img src="<?= base_url('images/images/bg_review_2.png'); ?>" alt="Zabeera Review" class="bg-review-2">
+            <img src="<?= base_url('images/images/bg_review_3.png'); ?>" alt="Zabeera Review" class="bg-review-3">
+            <img src="<?= base_url('images/images/bg_review_4.png'); ?>" alt="Zabeera Review" class="bg-review-4">
             <div class="review-content review-content-1">
                 <span><?php echo $review[0]['date']; ?></span>
                 <h3><?php echo $review[0]['title']; ?></h3>
@@ -151,7 +151,7 @@ include(APPPATH . 'Views/templates/header.php');
     </div>
 </section>
 <div class="container-home">
-    <img src="images/footer_bg.png" class="footer_bg" alt="Zabeera Image Lotion">
+    <img src="<?= base_url('images/footer_bg.png'); ?>" class="footer_bg" alt="Zabeera Image Lotion">
 </div>
 
 <?php

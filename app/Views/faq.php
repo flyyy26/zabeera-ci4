@@ -4,7 +4,7 @@ include(APPPATH . 'Views/templates/header.php');
 
 <div class="container-home">
     <div class="banner_page banner_page_faq">
-        <img src="images/heading_banner_faq.svg" alt="About Zabeera">
+        <img src="<?= base_url('images/heading_banner_faq.svg'); ?>" alt="About Zabeera">
     </div>
     <div class="faq-layout">
         <?php if (!empty($faqs)): ?>
@@ -20,7 +20,7 @@ include(APPPATH . 'Views/templates/header.php');
     </div>
 </div>
 <div class="container-home">
-    <img src="images/footer_bg.png" class="footer_bg footer_bg_product" alt="Zabeera Image Lotion">
+    <img src="<?= base_url('images/footer_bg.png'); ?>" class="footer_bg footer_bg_product" alt="Zabeera Image Lotion">
 </div>
 
 <?php
