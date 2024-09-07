@@ -1,6 +1,6 @@
 <footer class="footer_container">
         <div class="company_identity">
-            <img src="images/logo.png" alt="">
+            <img src="<?= base_url('images/logo.png'); ?>" alt="">
             <p>Jl. Sudirman Barat, Jakarta Pusat, DKI Jakarta </p>
             <p>Tel: +62 819 4005 0394</p>
             <p>Email: zabeera@gmail.com</p>
